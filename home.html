@@ -9,33 +9,87 @@
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+
     <title></title>
 </head>
 
 <body>
 
-    <!--Navigation Bar-->
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Logo</a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="components.html">Components</a></li>
-                    <li><a href="javascript.html">Javascript</a></li>
-                    <li><a href="mobile.html">Mobile</a></li>
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="components.html">Components</a></li>
-                    <li><a href="javascript.html">Javascript</a></li>
-                    <li><a href="mobile.html">Mobile</a></li>
-                </ul>
+        <!--Navigation Bar-->
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">Logo</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="active"><a href="sass.html">Home</a></li>
+                        <li><a href="components.html">Quiz</a></li>
+                        <li><a href="javascript.html">Events</a></li>
+                        <li><a href="mobile.html">Technical Articles</a></li>
+                        <li><a href="mobile.html">Announcements and News</a></li>
+                        <li><a href="mobile.html">Committee</a></li>
+
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="sass.html">Home</a></li>
+                        <li><a href="components.html">Quiz</a></li>
+                        <li><a href="javascript.html">Events</a></li>
+                        <li><a href="mobile.html">Technical Articles</a></li>
+                        <li><a href="mobile.html">Announcements and News</a></li>
+                        <li><a href="mobile.html">Committee</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--End of Navigation Bar-->
+
+        <!--Main Container of the Application-->
+        <main class="container">
+            Hello World
+        </main>
+        <!--End of the Main Container-->
+
+
+
+        <!--Footer of the page-->
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">UPES-CSI Student Chapter</h5>
+                        <p class="grey-text text-lighten-4">Address</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Connect with us</h5>
+                        <ul>
+
+                            <li><a href="https://twitter.com/upescsi" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @upescsi</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Facebook Handler</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </div>
-    <!--Navigation Bar-->
+            <div class="footer-copyright">
+                <div class="container">
+                    Developed and Maintained by UPES-CSI Student Chapter  &copy; 2015-2016
+                    <a class="grey-text text-lighten-4 right" href="http://materializecss.com">Developed using Materializecss</a>
+                </div>
+            </div>
+        </footer>
+        <!--End of the Footer of the Page-->
+
 
 
 </body>
@@ -44,5 +98,6 @@
     $( document ).ready(function(){
         $(".button-collapse").sideNav();
     });
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 </script>
 </html>
