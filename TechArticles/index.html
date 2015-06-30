@@ -3,6 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
@@ -22,6 +23,10 @@
     <title></title>
 </head>
 <body>
+        <!--facebook code in here-->
+        <div id="fb-root"></div>
+
+
 <!--Navigation Bar-->
 <div class="navbar-fixed">
     <nav>
@@ -55,11 +60,17 @@
 <!--Main Container of the Application-->
 <main class="container">
     <div class="row">
+        <div class="col s6 m6 l6">
+            <blockquote><p class="flow-text">Recent Articles</p></blockquote>
+        </div>
 
+    </div>
+    <div class="row">
         <div class="col s12 m12 l12">
             <ul class="collapsible popout" data-collapsible="accordion">
+
                 <li>
-                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>First Article Heading</div>
+                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>First Article Heading<i class="material-icons tooltipped right amber-text" data-position="right" data-delay="50" data-tooltip="Share article">share</i></div>
                     <div class="collapsible-body"><p><span class="flow-text indigo-text">Summary</span><span class="right orange-text">Deepankar Agarwal</span><br>Lorem ipsum dolor sit amet, ei cum solum graeci recusabo, no eos tota simul pertinacia. Vim altera viderer salutandi in, an vim voluptatum delicatissimi, quidam possim verear has ut. Nam vidisse verterem ex. Ne nostrud facilisis imperdiet mea, an has quod legimus dissentiunt.
 
                         Moderatius liberavisse vix an, per cu habeo vocibus, facete imperdiet cu has. Tibique deterruisset id eos, cum summo legimus abhorreant no. Ex per iudico noster platonem, id ignota honestatis nec. Et usu eirmod feugait, vis at gloriatur appellantur, ad mel ferri consulatu. Audire scribentur ius an, duo postea aliquam ex.
@@ -130,34 +141,25 @@
                         <br><div class="right"><a class="waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>Readmore</a></div>
                         </p></div>
                 </li>
-                <li>
-                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>Seventh Article Heading</div>
-                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Summary</span><span class="right orange-text">Deepankar Agarwal</span><br>Lorem ipsum dolor sit amet, ei cum solum graeci recusabo, no eos tota simul pertinacia. Vim altera viderer salutandi in, an vim voluptatum delicatissimi, quidam possim verear has ut. Nam vidisse verterem ex. Ne nostrud facilisis imperdiet mea, an has quod legimus dissentiunt.
 
-                        Moderatius liberavisse vix an, per cu habeo vocibus, facete imperdiet cu has. Tibique deterruisset id eos, cum summo legimus abhorreant no. Ex per iudico noster platonem, id ignota honestatis nec. Et usu eirmod feugait, vis at gloriatur appellantur, ad mel ferri consulatu. Audire scribentur ius an, duo postea aliquam ex.
 
-                        Ea ius melius incorrupte. Liber persecuti id quo. Porro facete suavitate pri at. Accusata democritum scripserit no vix. Soluta graece oblique at pri, eu augue falli consequuntur nam.
-
-                        Per impetus reprehendunt ne. Graece tamquam accusam cum in. An tale omittam oportere mel, vis an iisque adipisci urbanitas. Ius ut elitr adolescens eloquentiam, mea singulis principes ei. In graece mnesarchum vix, possim laboramus ea cum, vim quot fierent deseruisse ut. Eum ea meis periculis.
-                        <br><div class="right"><a class="waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>Readmore</a></div>
-                        </p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>Eight Article Heading</div>
-                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Summary</span><span class="right orange-text">Deepankar Agarwal</span><br>Lorem ipsum dolor sit amet, ei cum solum graeci recusabo, no eos tota simul pertinacia. Vim altera viderer salutandi in, an vim voluptatum delicatissimi, quidam possim verear has ut. Nam vidisse verterem ex. Ne nostrud facilisis imperdiet mea, an has quod legimus dissentiunt.
-
-                        Moderatius liberavisse vix an, per cu habeo vocibus, facete imperdiet cu has. Tibique deterruisset id eos, cum summo legimus abhorreant no. Ex per iudico noster platonem, id ignota honestatis nec. Et usu eirmod feugait, vis at gloriatur appellantur, ad mel ferri consulatu. Audire scribentur ius an, duo postea aliquam ex.
-
-                        Ea ius melius incorrupte. Liber persecuti id quo. Porro facete suavitate pri at. Accusata democritum scripserit no vix. Soluta graece oblique at pri, eu augue falli consequuntur nam.
-
-                        Per impetus reprehendunt ne. Graece tamquam accusam cum in. An tale omittam oportere mel, vis an iisque adipisci urbanitas. Ius ut elitr adolescens eloquentiam, mea singulis principes ei. In graece mnesarchum vix, possim laboramus ea cum, vim quot fierent deseruisse ut. Eum ea meis periculis.
-                        <br><div class="right"><a class="waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>Readmore</a></div>
-                        </p></div>
-                </li>
             </ul>
         </div>
 
     </div>
+
+
+    <!--Floating action button-->
+    <div class="fixed-action-btn" style="bottom: 150px; right: 24px;">
+        <a class="btn-floating btn-large green">
+            <i class="large material-icons tooltipped" data-position="left" data-delay="50" data-tooltip="Options">settings</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red" ><i class="material-icons tooltipped" data-position="left" data-delay="50" data-tooltip="Browse By Categories">search</i></i></a></li>
+            <li><a class="btn-floating yellow"><i class="material-icons tooltipped" data-position="left" data-delay="50" data-tooltip="Add Your Own Article">edit</i></a></li>
+        </ul>
+    </div>
+    <!--End of Floating action button-->
 
 
 </main>
@@ -178,7 +180,7 @@
                 <ul>
 
                     <li><a href="https://twitter.com/upescsi" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @upescsi</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Facebook Handler</a></li>
+                    <li><div class="fb-like" data-href="https://facebook.com/upescsi" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div></li>
                 </ul>
             </div>
         </div>
@@ -203,5 +205,28 @@
             accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
         });
     });
+
+    $(document).ready(function(){
+        $('.tooltipped').tooltip({delay: 50});
+    });
+
+    $('.dropdown-button').dropdown({
+                inDuration: 300,
+                outDuration: 225,
+                constrain_width: true, // Does not change width of dropdown to that of the activator
+                hover: true, // Activate on hover
+                gutter: 0, // Spacing from edge
+                belowOrigin: false // Displays dropdown below the button
+            }
+    );
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
 </script>
 </html>
