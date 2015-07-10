@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <style>
         body {
@@ -32,7 +33,7 @@
             <ul class="right hide-on-med-and-down">
                 <li><a href="../home.html">Home</a></li>
                 <li><a href="../Quiz">Quiz</a></li>
-                <li class="active"><a href="../Events">Events</a></li>
+                <li><a href="../Events">Events</a></li>
                 <li><a href="../TechArticles">Technical Articles</a></li>
                 <li><a href="../Announcements">Announcements and News</a></li>
                 <li><a href="../Committee">Committee</a></li>
@@ -54,34 +55,38 @@
 
 <!--Main Container of the Application-->
 <main class="container">
-    <div class="row">
+    <div class="row" style="margin-top: 40px;">
+        <div class="col s3 m3 l3">&nbsp;</div>
         <div class="col s6 m6 l6">
-            <img src="../images/comming.png" class="responsive-img" style="margin-top: 30px;"/>
-        </div>
-        <div class="col s6 m6 l6">
-            <div class="card-panel blue accent-4" style="margin-top: 30px;">
-                <span class="white-text flow-text">
-                    <b>Comming Soon</b> &nbsp;&nbsp;&nbsp;&nbsp;" Hang on! "
-                </span>
-                <br><br><br>
-                <span class="flow-text white-text">
-                    Want to get notified Register here!
-                </span>
+            <div class="card-panel blue darken-1">
+                <div class="container">
+                    <span class="white-text flow-text"><h4 style="margin-bottom: 40px;"><b>Login</b></h4></span>
+                    <div class="input-field white-text">
+                        <input id="email_id" type="text" class="validate white-text">
+                        <label for="email_id" class="white-text">Email Id</label>
+                    </div>
+                    <div class="input-field white-text">
+                        <input id="password" type="password" class="validate white-text">
+                        <label for="password" class="white-text">Password</label>
+                    </div>
+                    <div class="right-align" style="margin-top: 30px;">
+                        <a class="waves-effect waves-light btn"><i class="material-icons left"></i>Login</a>
 
-                <div class="input-field white-text" style="margin-top: 50px;">
-                    <input id="last_name" type="text" class="validate">
-                    <label for="last_name" class="white-text">Email ID</label>
-                    <a class="waves-effect waves-light btn white blue-text" style="margin-top:12px; ">Notify me!</a>
+                    </div>
+
                 </div>
-
             </div>
-
-
         </div>
+        <div class="col s3 m3 l3">&nbsp;</div>
     </div>
+
+
+
+
+
+
 </main>
 <!--End of the Main Container-->
-
 
 
 <!--Footer of the page-->
