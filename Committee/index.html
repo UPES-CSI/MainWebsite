@@ -5,9 +5,12 @@
     <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:400italic,400,700' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
-
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://tympanus.net/Development/Arctext/js/jquery.arctext.js"></script>
+	
     <style>
         body {
             display: flex;
@@ -18,6 +21,73 @@
         main {
             flex: 1 0 auto;
         }
+		.zoom_img img:hover{
+			-moz-transform:scale(1.2); 
+			-webkit-transform:scale(1.2); 
+			-o-transform:scale(1.2);
+			-moz-transition:-moz-transform 0.7s ease-in; 
+			-webkit-transition:-webkit-transform 0.7s ease-in; 
+			-o-transition:-o-transform 0.7s ease-in;
+		}
+	
+		#wrapper .text {
+			position:absolute;
+			visibility:hidden;
+		}
+
+		#wrapper:hover .text {
+			visibility:visible;
+		}
+
+		img{
+			height:170px;
+			width:170px;
+			-moz-transition:-moz-transform 0.3s ease-in; 
+			-webkit-transition:-webkit-transform 0.3s ease-in; 
+			-o-transition:-o-transform 0.3s ease-in;
+		}
+		img:hover{
+			-moz-transition:-moz-transform 0.7s ease-in; 
+			-webkit-transition:-webkit-transform 0.7s ease-in; 
+			-o-transition:-o-transform 0.7s ease-in;
+			-moz-transform:scale(1.2); 
+			-webkit-transform:scale(1.2); 
+			-o-transform:scale(1.2);
+		}
+		img:before {
+			position: absolute;
+			content: '';
+			background: red;
+			z-index: 10;
+			width: 100%;
+			height: 100%;
+			pointer-events: none;
+			border-radius:50%;
+		}
+		
+		.black-cont:before {
+			position: absolute;
+			opacity: 0.4;
+			content: '';
+			background: black;
+			width: 170px;
+			height: 170px;
+			pointer-events: none;
+			border-radius: 50%;
+			-moz-transition:-moz-transform 0.5s ease-in; 
+			-webkit-transition:-webkit-transform 0.5s ease-in; 
+			-o-transition:-o-transform 0.5s ease-in;
+		}
+​		
+		#container > div {
+			display: none
+		}
+		#container > div:first-child {
+			display: block
+		}
+		#container:hover > div {
+			display: block
+		}
     </style>
     <title></title>
 </head>
@@ -54,7 +124,208 @@
 
 <!--Main Container of the Application-->
 <main class="container">
-    Hello World
+<ul class="">
+	<li>
+		<div class="zoom_img center black-cont" id="wrapper">
+			<img class="circle hover" style="opacity:0.8;" height="170" width="170" src="../images/committee/Mayank Mahajan_PRESIDENT.jpg">
+			<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:white;top:60px;left:616px;" id="a1">Mayank Mahajan</div>
+			<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:247px;left:640px;" id="a2">President</div>
+		</div>
+	</li>
+	<br>
+	<li>
+		<div class="zoom_img center black-cont" id="wrapper">
+			<img class="circle hover" style="opacity: 0.7;" height="170" width="170" src="../images/committee/Neeharika Sharma_VICE PRESIDENT.jpg">
+			<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:white;top:259px;left:609px;" id="b1">Neeharika Sharma</div>
+			<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:445px;left:620px;" id="b2">Vice-President</div>
+		</div>
+	</li>
+	<br>
+	<li>
+		<div class="center">
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Ankit Jaggi - General Secretary.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:458px;left:330px;" id="c1">Ankit Jaggi</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:640px;left:315px;" id="c2">Gen. Secretary</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Akshay_Mittal_Secretary.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:459px;left:513px;" id="c3">Akashay Mittal</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:641px;left:534px;" id="c4">Secretary</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Sambhavi _Public Relation Head.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:460px;left:725px;" id="c5">Sambhavi</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:643px;left:727px;" id="c6">P.R. Head</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Rohan Srivastava.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:460px;left:895px;" id="c7">Rohan Srivastava</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:642px;left:925px;" id="c8">Treasurer</div>
+			<span>&nbsp&nbsp&nbsp&nbsp&nbsp
+		</div>
+	</li>
+	<br>
+	<li>
+		<div class="zoom_img center">
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Pulkit gupta (joint secretary).jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:658px;left:519px;" id="d1">Pulkit Gupta</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:839px;left:511px;" id="d2">Joint Secretary</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/ASHISH SINHA-WORKING COMMITTEE HEAD.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:white;top:659px;left:715px;" id="d3">Ashish Sinha</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:838px;left:663px;" id="d4">Working-Committee Head</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+		</div>
+	</li>
+	<br>
+	<li>
+		<div class="zoom_img center">
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Pratibha Tiwari_Associate PR Head.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:855px;left:512px;" id="e1">Pratibha Tiwari</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:1040px;left:506px;" id="e2">Assoc. P.R. Head</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/PRATIBHA RANA-ASSO PUBLIC RELATION.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:855px;left:712px;" id="e3">Pratibha Rana</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:1040px;left:703px;" id="e4">Assoc. P.R. Head</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+		</div>
+	</li>
+	<br>
+	<li>
+		<div class="zoom_img center">
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Soumil Agarwal_Event Director.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:300;font-size:14px;color:black;top:1055px;left:414px;" id="f1">Soumil Agarwal</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:1236px;left:412px;" id="f2">Event Director</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/DEEPANKAR AGARWAL-DESIGN and TECHNICAL DIRECTOR.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:300;font-size:14px;color:black;top:1055px;left:596px;" id="f3">Deepankar Agarwal</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:1238px;left:578px;" id="f4">Design & Technical Dir.</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/DIVYANI SINGH.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:300;font-size:14px;color:black;top:1054px;left:808px;" id="f5">Divyani Singh</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:1236px;left:772px;" id="f6">Documentation Director</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+		</div>
+	</li>
+	<br>
+	<li>
+		<div class="zoom_img center">
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Anmol_Rastogi_InternalPR.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:white;top:1250px;left:514px;" id="g1">Anmol Rastogi</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:1435px;left:518px;" id="g2">Internal P.R.</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Vibhor_Taneja_Associate_Treasurer.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:white;top:1250px;left:714px;" id="g3">Vibhor Taneja</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:1435px;left:700px;" id="g4">Assoc. Treasurer</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+		</div>
+	</li>
+	<br>
+	<li>
+		<div class="zoom_img center">
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/JEEVESH SEHGAL-EVENT HEAD.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:300;font-size:14px;color:black;top:1450px;left:417px;" id="h1">Jeevesh Sehgal</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:1632px;left:428px;" id="h2">Event Head</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/srashti_gupta(registration head).jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:300;font-size:14px;color:black;top:1450px;left:615px;" id="h3">Srashti Gupta</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:1632px;left:598px;" id="h4">Registration Head</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/ADITYA MISHRA-DISCIPLINARY HEAD.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:300;font-size:14px;color:black;top:1450px;left:810px;" id="h5">Aditya Mishra</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:1632px;left:795px;" id="h6">Disciplinary Head</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+		</div>
+	</li>
+	<br>
+	<li>
+		<div class="zoom_img center">
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Shriya arora (associative event head).jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:1649px;left:523px;" id="i1">Shriya Arora</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:1830px;left:500px;" id="i2">Assoc. Event Head</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Ramu N Bhattathiri_Associate Event Head.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:1646px;left:691px;" id="i3">Ramu N Bhattathiri</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:1830px;left:695px;" id="i4">Assoc. Event Head</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+		</div>
+	</li>
+	<br>
+	<li>
+		<div class="zoom_img center">
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Varun Bawa - Technical Head.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:1845px;left:426px;" id="j1">Varun Bawa</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:2030px;left:412px;" id="j2">Technical Head</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Arun_Kant_Pant_Designing_Head.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:1845px;left:610px;" id="j3">Arun Kant Pant</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:2028px;left:607px;" id="j4">Designing Head</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Akhil Juneja-VFX Head.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:1845px;left:817px;" id="j5">Akhil Juneja</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:2028px;left:825px;" id="j6">VFX Head</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+		</div>
+	</li>
+	<br>
+	<li>
+		<div class="zoom_img center">
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Ishika Banerjee_Editor in Chief.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:2042px;left:515px;" id="k1">Ishika Banerjee</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:2228px;left:515px;" id="k2">Editor in Chief</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Vidushi Keshwani(Documentation Head).jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:2042px;left:696px;" id="k3">Vidushi Keshwani</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:2226px;left:682px;" id="k4">Documentation Head</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+		</div>
+	</li>
+	<br>
+	<li>
+		<div class="zoom_img center">
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Shreeansh Mairal-Branch Head.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:2240px;left:306px;" id="l1">Shreeansh Mairal</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:2425px;left:322px;" id="l2">Branch Head</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Vanshaj_Setia_Branch Head.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:2240px;left:517px;" id="l3">Vanshaj Setia</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:2424px;left:520px;" id="l4">Branch Head</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/Advitya Patni (Branch Head).jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:2240px;left:712px;" id="l5">Advitya Patni</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:2424px;left:717px;" id="l6">Branch Head</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="black-cont" id="wrapper">
+				<img class="circle" style="opacity:0.8;" height="170" width="170" src="../images/committee/PIYUSH DHINGRA-BRACH HEAD.jpg">
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:2240px;left:902px;" id="l7">Piyush Dhingra</div>
+				<div class="text" style="font-family:'Merriweather',serif;font-weight:800;font-size:14px;color:black;top:2424px;left:914px;" id="l8">Branch Head</div>
+			</span>&nbsp&nbsp&nbsp&nbsp&nbsp
+		</div>
+	</li>
+</ul>
 </main>
 <!--End of the Main Container-->
 
@@ -87,7 +358,68 @@
     </div>
 </footer>
 <!--End of the Footer of the Page-->
-
+<script>
+        $().ready(function() {
+            $('#a1').arctext({radius: 75});
+			$('#a2').arctext({radius: 75, dir: -1});
+            $('#b1').arctext({radius: 75});
+			$('#b2').arctext({radius: 75, dir: -1});
+            $('#c1').arctext({radius: 75});
+			$('#c2').arctext({radius: 75, dir: -1});
+            $('#c3').arctext({radius: 75});
+			$('#c4').arctext({radius: 75, dir: -1});
+            $('#c5').arctext({radius: 75});
+			$('#c6').arctext({radius: 75, dir: -1});
+            $('#c7').arctext({radius: 75});
+			$('#c8').arctext({radius: 75, dir: -1});
+            $('#d1').arctext({radius: 75});
+			$('#d2').arctext({radius: 75, dir: -1});
+            $('#d3').arctext({radius: 75});
+			$('#d4').arctext({radius: 40, dir: -1});
+            $('#e1').arctext({radius: 75});
+			$('#e2').arctext({radius: 75, dir: -1});
+            $('#e3').arctext({radius: 75});
+			$('#e4').arctext({radius: 75, dir: -1});
+            $('#f1').arctext({radius: 75});
+			$('#f2').arctext({radius: 75, dir: -1});
+            $('#f3').arctext({radius: 75});
+			$('#f4').arctext({radius: 75, dir: -1});
+            $('#f5').arctext({radius: 75});
+			$('#f6').arctext({radius: 75, dir: -1});
+            $('#g1').arctext({radius: 75});
+			$('#g2').arctext({radius: 75, dir: -1});
+            $('#g3').arctext({radius: 75});
+			$('#g4').arctext({radius: 75, dir: -1});
+            $('#h1').arctext({radius: 75});
+			$('#h2').arctext({radius: 75, dir: -1});
+            $('#h3').arctext({radius: 75});
+			$('#h4').arctext({radius: 75, dir: -1});
+            $('#h5').arctext({radius: 75});
+			$('#h6').arctext({radius: 75, dir: -1});
+            $('#i1').arctext({radius: 75});
+			$('#i2').arctext({radius: 75, dir: -1});
+            $('#i3').arctext({radius: 75});
+			$('#i4').arctext({radius: 75, dir: -1});
+			$('#j1').arctext({radius: 75});
+			$('#j2').arctext({radius: 75, dir: -1});
+            $('#j3').arctext({radius: 85});
+			$('#j4').arctext({radius: 75, dir: -1});
+            $('#j5').arctext({radius: 75});
+			$('#j6').arctext({radius: 75, dir: -1});
+            $('#k1').arctext({radius: 75});
+			$('#k2').arctext({radius: 75, dir: -1});
+            $('#k3').arctext({radius: 75});
+			$('#k4').arctext({radius: 75, dir: -1});
+			$('#l1').arctext({radius: 75});
+			$('#l2').arctext({radius: 75, dir: -1});
+            $('#l3').arctext({radius: 75});
+			$('#l4').arctext({radius: 75, dir: -1});
+            $('#l5').arctext({radius: 75});
+			$('#l6').arctext({radius: 75, dir: -1});
+            $('#l7').arctext({radius: 75});
+			$('#l8').arctext({radius: 75, dir: -1});
+		});
+    </script>
 
 </body>
 <script>
