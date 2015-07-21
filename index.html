@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <title>UPES-CSI</title>
+</head>
+<body>
+
+    <div class="row">
+        <div class="col s2 m2 l2 hide-on-small-only">
+
+
+                <img id="Rocket" src="images/rocket.png" style="width:90px; height:auto; margin-left: 12px; margin-top: 350px;" class="responsive-img" />
+        </div>
+
+        <div class="col s8 m8 l8 hide-on-small-only">
+                    HELLO wORLD HERE
+        </div>
+
+        <div class="col s2 m2 l2 hide-on-small-only">
+            Sun and Moon Here
+        </div>
+
+
+    </div>
+
+</body>
+
+<script>
+
+
+    //AnimateRotate(-900,"#gear0",9000);
+
+    moveRocket("#Rocket");
+    function moveRocket(RocketId)
+    {
+        var elem = $(RocketId);
+        elem.animate({'margin-top':'120px'},5000);
+    }
+
+//    function AnimateRotate(d,imageID,dura){
+//        var elem = $(imageID);
+//        var location = elem.position();
+//        $({deg: 0}).animate({deg: d}, {
+//            duration: dura,
+//            step: function(now){
+//                elem.css({
+//                    transform: "translate("")"
+//                    //transform: "rotate(" + now + "deg)"
+//                });
+//            }
+//        });
+//    }
+</script>
+</html>

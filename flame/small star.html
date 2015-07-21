@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+    <title></title>
+    <style>
+        .star-blue{
+            background-color: #0059bc;
+            width:60px;
+            height:60px;
+            border-radius: 30px;
+            position:relative;
+            left: 100px;
+            top:100px;
+
+        }
+        .myContainer{
+            width:60px;
+            height:60px;
+            margin:auto;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="myContainer">
+        <div class="star-blue">
+
+        </div>
+    </div>
+
+
+</body>
+<script>
+
+                function remove()
+                {
+                    $(".star-blue").animate({height: '0px',width:'0px',left:'120px',top:'120px'},2000,function(){create();});
+                }
+                function create()
+                {
+                    $(".star-blue").animate({height: '60px',width:'60px',left:'100px',top:'100px'},2000,function(){remove();});
+                }
+                $(document).ready(function(){
+
+                    remove();
+                });
+
+
+
+
+</script>
+</html>

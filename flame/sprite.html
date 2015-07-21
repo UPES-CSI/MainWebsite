@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            background: #24aecd;
+        }
+
+        .monster {
+            width: 110px;
+            height: 100px;
+            margin: 2% auto;
+            background: url('flyingpig.png') left center;
+            animation: play .8s steps(10) infinite;
+        }
+
+        @keyframes play {
+            100% { background-position: -1900px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="monster"></div>
+</body>
+</html>
