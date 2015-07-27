@@ -5,6 +5,8 @@
     <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="../css/flame.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="../css/stars.css"  media="screen,projection"/>
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css"></link>
+	<link id="page_favicon" href="../favicon.ico" rel="icon" type="image/x-icon">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
@@ -12,7 +14,10 @@
     <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
 
     <style>
-        body {
+        p{
+			font-family: 'Ubuntu', sans-serif;
+		}
+		body {
             display: flex;
             min-height: 100vh;
             flex-direction: column;
@@ -22,7 +27,18 @@
             flex: 1 0 auto;
         }
     </style>
-    <title></title>
+    <title>Quiz</title>
+<script>
+//Search Code Snippet for SEO Google (Google Analytics Tracking Code)
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65582820-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </head>
 <body>
 <!--Navigation Bar-->
@@ -33,7 +49,7 @@
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 
             <ul class="right hide-on-med-and-down">
-                <li><a href="../home.html">Home</a></li>
+                <li><a href="..">Home</a></li>
                 <li class="active"><a href="../Quiz">Quiz</a></li>
                 <li><a href="../Events">Events</a></li>
                 <li><a href="../TechArticles">Technical Articles</a></li>
@@ -42,7 +58,7 @@
             </ul>
 
             <ul class="side-nav" id="mobile-demo">
-                <li><a href="../home.html">Home</a></li>
+                <li><a href="..">Home</a></li>
                 <li class="active"><a href="../Quiz">Quiz</a></li>
                 <li><a href="../Events">Events</a></li>
                 <li><a href="../TechArticles">Technical Articles</a></li>
@@ -59,28 +75,16 @@
 <main class="container">
     <div class="row">
         <div class="col s12 m6 l6">
-            <img src="../images/comming.png" class="responsive-img" style="margin-top: 30px; z-index: 2"/>
+            <img src="../images/comming.png" class="responsive-img" style="margin-top: 30px; z-index: 12"/>
             <div class="myFlame">
-                <div class="flame-yellow flame"></div>
-                <div class="flame-white flame"></div>
             </div>
-
         </div>
         <div class="col s12 m6 l6">
             <div class="card-panel blue accent-4" style="margin-top: 30px;">
                 <span class="white-text flow-text">
-                    <b>Comming Soon</b> &nbsp;&nbsp;&nbsp;&nbsp;" Hang on! "
+                    <b>Coming Soon</b> &nbsp;&nbsp;&nbsp;&nbsp;" Hang on! "
                 </span>
-                <br><br><br>
-                <span class="flow-text white-text">
-                    Want to get notified Register here!
-                </span>
-
-                <div class=" card-panel input-field blue-text" style="margin-top: 50px;">
-                    <input placeholder="Email Id" id="first_name" type="text" class="blue-text">
-                    <a class="waves-effect waves-light btn blue white-text" style="margin-top:12px; ">Notify me!</a>
-                </div>
-
+                <br><br>
             </div>
 
 
@@ -93,8 +97,9 @@
 
 <!--Footer of the page-->
 <footer class="page-footer blue darken-1">
-    <div class="container">
-        <div class="row">
+    <img class="left" style="padding-left: 10px;" height="135" width="140" src="../images/csi.png">
+	<div class="container">
+	    <div class="row">
             <div class="col l6 s12">
                 <h5 class="white-text">UPES-CSI Student Chapter</h5>
                 <p class="grey-text text-lighten-4">Address:<br> UPES-CSI Student Chapter<br> IT-Tower , CIT <br>University of Petroleum and Energy Studies <br>Energy Acres , P.O. Bidholi via Prem nagar , <br>Dehradun(248007) , Uttarakhand , India </p>

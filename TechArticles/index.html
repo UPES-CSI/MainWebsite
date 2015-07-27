@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css"></link>
+	<link id="page_favicon" href="../favicon.ico" rel="icon" type="image/x-icon">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
 
     <style>
-        body {
+        p{
+			font-family: 'Ubuntu', sans-serif;
+		}
+		body {
             display: flex;
             min-height: 100vh;
             flex-direction: column;
@@ -20,7 +25,18 @@
             flex: 1 0 auto;
         }
     </style>
-    <title></title>
+    <title>Technical Articles</title>
+<script>
+//Search Code Snippet for SEO Google (Google Analytics Tracking Code)
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65582820-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </head>
 <body>
         <!--facebook code in here-->
@@ -35,7 +51,7 @@
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 
             <ul class="right hide-on-med-and-down">
-                <li><a href="../home.html">Home</a></li>
+                <li><a href="..">Home</a></li>
                 <li><a href="../Quiz">Quiz</a></li>
                 <li><a href="../Events">Events</a></li>
                 <li class="active"><a href="../TechArticles">Technical Articles</a></li>
@@ -44,7 +60,7 @@
             </ul>
 
             <ul class="side-nav" id="mobile-demo">
-                <li><a href="../home.html">Home</a></li>
+                <li><a href="..">Home</a></li>
                 <li><a href="../Quiz">Quiz</a></li>
                 <li><a href="../Events">Events</a></li>
                 <li  class="active"><a href="../TechArticles">Technical Articles</a></li>
@@ -59,6 +75,7 @@
 
 <!--Main Container of the Application-->
 <main class="container">
+<!--Article Heading must be upto 5 words maximum -->
     <div class="row">
         <div class="col s6 m6 l6">
             <blockquote><p class="flow-text">Recent Articles</p></blockquote>
@@ -68,135 +85,59 @@
     <div class="row">
         <div class="col s12 m12 l12">
             <ul class="collapsible popout" data-collapsible="accordion">
-
+			
+			   <li>
+                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>Open Source Robotics</div>
+                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Abstract</span><span class="right orange-text">Sidharth Ratan</span><br>
+						A robot enthusiast’s flight of fancy could envisage a futuristic society where robots and human beings coexist. Like many other emerging fields of robotics, algorithms for multi-robot systems are inspired by nature. Foraging for food, division of labour, nest-building, cumulative defence against enemies, leader following, flocking, etc., are common in human, insect and animal societies. A unique feature of multi-robot systems is that one can distinguish between individual-level behaviour and team-level behaviour. The former refers to what an individual in a team does. The latter refers to the behaviour of the team as a whole. For instance, in schools of fish, the individual behaviour of each fish is to mainly avoid collision with neighbour’s, and match their attitude. The team-level behaviour, on the other hand, is a remarkable display of cohesive and coordinated motion. Stage is a part of the Player Project (Player/Stage/Gazebo) and is now also a part of ROS (Robot Operating System); there have been significant changes since version 3 to improve its simulation performance. Maybe the most important novelty is the support for multi-threaded execution. ARGoS (Autonomous Robots Go Swarming) is a multi-robot simulator designed to support large teams of robots. Its design is pretty different from the design of other simulators. Its most distinctive feature is that the 3D simulated world can be divided in regions, and each region can be assigned to a different physics engine. Furthermore, ARGoS’ design revolves around the concept of tunable accuracy. In other words, in ARGoS, everything is a plugin (robot models, sensors, actuators, physics engines, visualisations, etc.) and the user can select which plug-ins to use for an experiment. Compared to Stage, ARGoS provides a 3D simulation environment. In addition, since the physics engines can be chosen by the user, any kind of experiment is possible, including complex self-assembly. Its performance is found to be superior to Stage’s. With the full power of four cores on a normal desktop PC, ARGoS can simulate more than 4,000 robots in real-time.
+					</div>
+                </li>
+			   <li>
+                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>3-D Printing</div>
+                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Abstract</span><span class="right orange-text">Ayushi Ajit</span><br>
+						In  the present era of  product development, time to market (TTM) is critical for the success and profitability of next generation products.When there are sophisticated electronics that are encased in 3D packaging with complex geometries and  with intricate detail used in them, TTM i.e, time to market can be compromised - which results  in lost opportunity. Thus Rapid prototyping , which is a group of techniques used to quickly fabricate a scale model of a physical part or assembly using three-dimensional computer aided design (CAD) data is usually done using "3D printing" thus not comprimising TTM. 3D prototypes include the advantage of being embedded within more appropriate shapes in order to authentically prototype products earlier in the development cycle. The fabrication freedom offered by 3D printing techniques, such as stereolithography  (an additive manufacturing process which employs a vat of liquid ultraviolet curable photopolymer "resin" and an ultraviolet laser to build parts' layers one at a time)  and fused deposition modeling have recently been explored in the context of 3D electronics integration - referred to as 3D structural electronics or 3D printed electronics. This paper includes an introduction of 3d printing,its methodology , hurdels and the speed with which it is being adopted in almost every industry through its  applications. 
+						</div>
+                </li>
                 <li>
-                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>First Article Heading<i class="material-icons tooltipped right amber-text" data-position="right" data-delay="50" data-tooltip="Share article">share</i></div>
-                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Summary</span><span class="right orange-text">Deepankar Agarwal</span><br>Lorem ipsum dolor sit amet, ei cum solum graeci recusabo, no eos tota simul pertinacia. Vim altera viderer salutandi in, an vim voluptatum delicatissimi, quidam possim verear has ut. Nam vidisse verterem ex. Ne nostrud facilisis imperdiet mea, an has quod legimus dissentiunt.
-
-                        Moderatius liberavisse vix an, per cu habeo vocibus, facete imperdiet cu has. Tibique deterruisset id eos, cum summo legimus abhorreant no. Ex per iudico noster platonem, id ignota honestatis nec. Et usu eirmod feugait, vis at gloriatur appellantur, ad mel ferri consulatu. Audire scribentur ius an, duo postea aliquam ex.
-
-                        Ea ius melius incorrupte. Liber persecuti id quo. Porro facete suavitate pri at. Accusata democritum scripserit no vix. Soluta graece oblique at pri, eu augue falli consequuntur nam.
-
-                        Per impetus reprehendunt ne. Graece tamquam accusam cum in. An tale omittam oportere mel, vis an iisque adipisci urbanitas. Ius ut elitr adolescens eloquentiam, mea singulis principes ei. In graece mnesarchum vix, possim laboramus ea cum, vim quot fierent deseruisse ut. Eum ea meis periculis.
-                        <br><div class="right"><a class="waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>Readmore</a></div>
+                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>Cloud Computing</div>
+                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Abstract</span><span class="right orange-text">Abhiriup Khanna</span><br>
+						Cloud computing is an eminent technology that has changed the world’s outlook for computing models and virtualization plays a major role in it. Virtualization is considered as one of the enablers for cloud computing and finds its application in many technologies emerging from cloud. It involves abstraction of varied resources like storage, processing network, power and memory. Virtualization can be seen as emulation with the difference of abstracting two or more systems on a host system. The key aspect of virtualization is to create virtual machines (VMs) that can facilitate execution of applications on to the cloud with desired configurations. The process of moving a VM from one source, server, or storage location to another is referred to as Virtual Machine Migration, whereas if we copy the VM into different server then it will create new VM which is not the form of migration. During migration if the VM continues to be active then it is known as Live VM Migration. In this paper, we lay emphasis on how virtualization and virtual machines play an eminent role in cloud computing. We tend to describe how surrogates of user devices running on cloud undergo live VM migration without letting the end user know about it. The paper talks about the different techniques for live VM migration and how a VM continues to render services even during migration. The end of the paper covers some of the recent works and future directions pertaining to live migration of virtual machines.
                         </div>
                 </li>
                 <li>
-                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>Second Article Heading</div>
-                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Summary</span><span class="right orange-text">Deepankar Agarwal</span><br>Lorem ipsum dolor sit amet, ei cum solum graeci recusabo, no eos tota simul pertinacia. Vim altera viderer salutandi in, an vim voluptatum delicatissimi, quidam possim verear has ut. Nam vidisse verterem ex. Ne nostrud facilisis imperdiet mea, an has quod legimus dissentiunt.
-
-                        Moderatius liberavisse vix an, per cu habeo vocibus, facete imperdiet cu has. Tibique deterruisset id eos, cum summo legimus abhorreant no. Ex per iudico noster platonem, id ignota honestatis nec. Et usu eirmod feugait, vis at gloriatur appellantur, ad mel ferri consulatu. Audire scribentur ius an, duo postea aliquam ex.
-
-                        Ea ius melius incorrupte. Liber persecuti id quo. Porro facete suavitate pri at. Accusata democritum scripserit no vix. Soluta graece oblique at pri, eu augue falli consequuntur nam.
-
-                        Per impetus reprehendunt ne. Graece tamquam accusam cum in. An tale omittam oportere mel, vis an iisque adipisci urbanitas. Ius ut elitr adolescens eloquentiam, mea singulis principes ei. In graece mnesarchum vix, possim laboramus ea cum, vim quot fierent deseruisse ut. Eum ea meis periculis.
-                        <br><div class="right"><a class="waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>Readmore</a></div>
-                        </div>
+                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>One Stop storage and analysis </div>
+                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Abstract</span><span class="right orange-text">Amogh Banta & Kanika Gupta</span><br>
+						This paper aims to conceptualise in multi-platform support that adds in multiple cloud services to broker from one place to access. Management of files, images and data on different storage providers can be accessed from one common login. Users need not maintain a tedious layout remembering which is stored where. Everything on cloud can be accessed from OneStop.This will help the users deal with this migration of the primary content to the cloud, and with products like the Dropbox chooser and Gmail-Google Drive integration surfacing, it’s clear that the industry is moving forward, that consumers will soon expect their applications to work with directly cloud storage. Thus, we believe that applications should integrate with all the cloud storage services not just one, but there are other interests at stake and so getting all applications to work with all sources of content will take time. We are starting this concept with the belief that as more and more content went online, there need to be a better way for applications to work with this online data. A simple explanation of a broker is that a broker acts as an intermediary in the negotiation and/or subsequent contractual relationship between a customers of a certain service and one or more providers of said service. In general the broker enhances the base service delivery and therewith, hopefully, service value. Enhancement may include managing easier access to the provider's service, mitigating cloud risks by providing greater trustworthiness of the provider's service, or even creating a completely new (integrated) service.Brokerage stands for the act of using and taking advantage of the various brokers available for specific services. In most cases, the brokerage services provider will act as broker and will use its own broker technology. The brokerage services provider receives a (small) fee for its brokerage service either from the providers or from the customers. Among the many precedents for the approach of a brokerage services provider in other industries are the travel industry's aggregation sites, such as Expedia. In the context of the cloud, cloud brokerage is an IT role and business model in which a cloud brokerage services provider adds value to one or more (public or private) cloud services for the benefit of one or more customers of that service. This way cloud customers ensure that they receive the best value from a wide selection of offerings (advised on by the cloud brokerage services provider), while cloud providers benefit from a broader audience for their cloud services pre-approved by the same brokerage services provider,providing a one-stop solution for managing personal and professional data through variant cloud storages used by user for secure online backup, ubiquitous access, file syncing across unlimited devices, and simple collaboration.
+					</div>
                 </li>
                 <li>
-                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>Third Article Heading</div>
-                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Summary</span><span class="right orange-text">Deepankar Agarwal</span><br>Lorem ipsum dolor sit amet, ei cum solum graeci recusabo, no eos tota simul pertinacia. Vim altera viderer salutandi in, an vim voluptatum delicatissimi, quidam possim verear has ut. Nam vidisse verterem ex. Ne nostrud facilisis imperdiet mea, an has quod legimus dissentiunt.
-
-                        Moderatius liberavisse vix an, per cu habeo vocibus, facete imperdiet cu has. Tibique deterruisset id eos, cum summo legimus abhorreant no. Ex per iudico noster platonem, id ignota honestatis nec. Et usu eirmod feugait, vis at gloriatur appellantur, ad mel ferri consulatu. Audire scribentur ius an, duo postea aliquam ex.
-
-                        Ea ius melius incorrupte. Liber persecuti id quo. Porro facete suavitate pri at. Accusata democritum scripserit no vix. Soluta graece oblique at pri, eu augue falli consequuntur nam.
-
-                        Per impetus reprehendunt ne. Graece tamquam accusam cum in. An tale omittam oportere mel, vis an iisque adipisci urbanitas. Ius ut elitr adolescens eloquentiam, mea singulis principes ei. In graece mnesarchum vix, possim laboramus ea cum, vim quot fierent deseruisse ut. Eum ea meis periculis.
-                        <br><div class="right"><a class="waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>Readmore</a></div>
-                    </div>
+                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>Fast Image Deconvolution</div>
+                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Abstract</span><span class="right orange-text">Isha Dua</span><br>
+						<u>Fast Image Deconvolution using Hyper-Laplacian Priors</u><br><br>The heavy-tailed distribution of gradients in natural scenes have proven effective priors for a range of problems such as denoising, deblurring and super-resolution. These distributions are well modeled by a hyper-Laplacian p(x)=e^(-k|x|)^α typically with 0.5 ≤ α ≤ 0.8. However, the use of sparse distributions makes the problem non-convex and impractically slow to solve for multi-megapixel images. This paper describe a deconvolution approach that is several orders of magnitude faster than existing techniques that use hyper-Laplacian priors. The alternating minimization scheme is adopted where one of the two phases is a non-convex problem that is separable over pixels. This per-pixel sub-problem may be solved with a lookup table (LUT). Alternatively, for two specific values of α, 1/2 and 2/3 an analytic solution can be found, by finding the roots of a cubic and quartic polynomial, respectively. Our approach (using either LUTs or analytic formulae) is able to deconvolve a 1 megapixel image in less than ∼3 seconds, achieving comparable quality to existing methods such as iteratively reweighted least squares (IRLS) that take ∼20 minutes. Furthermore, the method is quite general and can easily be extended to related image processing problems, beyond the deconvolution application demonstrated.
+						</div>
                 </li>
                 <li>
-                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>Fourth Article Heading</div>
-                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Summary</span><span class="right orange-text">Deepankar Agarwal</span><br>Lorem ipsum dolor sit amet, ei cum solum graeci recusabo, no eos tota simul pertinacia. Vim altera viderer salutandi in, an vim voluptatum delicatissimi, quidam possim verear has ut. Nam vidisse verterem ex. Ne nostrud facilisis imperdiet mea, an has quod legimus dissentiunt.
-
-                        Moderatius liberavisse vix an, per cu habeo vocibus, facete imperdiet cu has. Tibique deterruisset id eos, cum summo legimus abhorreant no. Ex per iudico noster platonem, id ignota honestatis nec. Et usu eirmod feugait, vis at gloriatur appellantur, ad mel ferri consulatu. Audire scribentur ius an, duo postea aliquam ex.
-
-                        Ea ius melius incorrupte. Liber persecuti id quo. Porro facete suavitate pri at. Accusata democritum scripserit no vix. Soluta graece oblique at pri, eu augue falli consequuntur nam.
-
-                        Per impetus reprehendunt ne. Graece tamquam accusam cum in. An tale omittam oportere mel, vis an iisque adipisci urbanitas. Ius ut elitr adolescens eloquentiam, mea singulis principes ei. In graece mnesarchum vix, possim laboramus ea cum, vim quot fierent deseruisse ut. Eum ea meis periculis.
-                        <br><div class="right"><a class="waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>Readmore</a></div>
-                        </div>
+                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>Mining Big Data in Real Time</div>
+                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Abstract</span><span class="right orange-text">Ishika Banerjee & Simran Gupta</span><br>
+						Today companies regularly generate terabytes of data in their daily operations. The sources include everything from data captured, network sensors to the social media, transactional business data and data created in other contexts. Given the volume of data being generated, real time computation is becoming the fastest and most competent way to obtain useful knowledge from what is happening now, allowing organizations to react quickly when problems appear or to detect new trends helping to improve their performance. Progressing data streams is rapidly contributing to the growth of data created over the last decade. It is estimated that by the end of 2020 the digital bits will be equal to the numbers of stars in this universe. In this paper we discuss the current and future trends of mining evolving data streams, and the challenges that the field will have to overcome during the next years.
+					</div>
                 </li>
                 <li>
-                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>Fifth Article Heading</div>
-                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Summary</span><span class="right orange-text">Deepankar Agarwal</span><br>Lorem ipsum dolor sit amet, ei cum solum graeci recusabo, no eos tota simul pertinacia. Vim altera viderer salutandi in, an vim voluptatum delicatissimi, quidam possim verear has ut. Nam vidisse verterem ex. Ne nostrud facilisis imperdiet mea, an has quod legimus dissentiunt.
-
-                        Moderatius liberavisse vix an, per cu habeo vocibus, facete imperdiet cu has. Tibique deterruisset id eos, cum summo legimus abhorreant no. Ex per iudico noster platonem, id ignota honestatis nec. Et usu eirmod feugait, vis at gloriatur appellantur, ad mel ferri consulatu. Audire scribentur ius an, duo postea aliquam ex.
-
-                        Ea ius melius incorrupte. Liber persecuti id quo. Porro facete suavitate pri at. Accusata democritum scripserit no vix. Soluta graece oblique at pri, eu augue falli consequuntur nam.
-
-                        Per impetus reprehendunt ne. Graece tamquam accusam cum in. An tale omittam oportere mel, vis an iisque adipisci urbanitas. Ius ut elitr adolescens eloquentiam, mea singulis principes ei. In graece mnesarchum vix, possim laboramus ea cum, vim quot fierent deseruisse ut. Eum ea meis periculis.
-                        <br><div class="right"><a class="waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>Readmore</a></div>
-                        </div>
+                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>Strategy in Cloud to Manage Workloads</div>
+                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Abstract</span><span class="right orange-text">Siddharth Dhawan</span><br>
+					<u>A Dynamic and Cost-effective Resource Allocation Strategy in Cloud SaaS to manage Heterogeneous Workloads</u><br><br>Cloud computing has been considered as a solution for solving enterprise application distribution and configuration challenges in the traditional software sales model. If users tend to migrate from traditional software to clouds the SaaS providers will generate revenue on pay-per-use model. However, in order to deliver software services to customers, SaaS companies have to either maintain their own hardware or rent it from infrastructure providers. This requirement means that SaaS providers will incur extra costs. In order to minimize the cost of resources, it is also important to satisfy a minimum service level to customers. Dynamic resource allocation is growing need of cloud providers for more number of users and with the less response time. Therefore, more work needs to be done on implementing resource Allocation algorithms for SaaS providers who want to minimize infrastructure cost and SLA violations. The paper aims at putting up algorithms designed in a way to ensure that SaaS providers are able to manage the dynamic change of customers along with mapping customer requests to infrastructure level parameters and handling heterogeneity of Virtual Machines. The customers’ Quality of Service parameters such as response time and infrastructure level parameters such as service initiation time are also given priority.  The paper also analyses and demonstrates the viability of the algorithms on the cost and SLA perspectives.
+					</div>
                 </li>
                 <li>
-                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>Sixth Article Heading</div>
-                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Summary</span><span class="right orange-text">Deepankar Agarwal</span><br>Lorem ipsum dolor sit amet, ei cum solum graeci recusabo, no eos tota simul pertinacia. Vim altera viderer salutandi in, an vim voluptatum delicatissimi, quidam possim verear has ut. Nam vidisse verterem ex. Ne nostrud facilisis imperdiet mea, an has quod legimus dissentiunt.
-
-                        Moderatius liberavisse vix an, per cu habeo vocibus, facete imperdiet cu has. Tibique deterruisset id eos, cum summo legimus abhorreant no. Ex per iudico noster platonem, id ignota honestatis nec. Et usu eirmod feugait, vis at gloriatur appellantur, ad mel ferri consulatu. Audire scribentur ius an, duo postea aliquam ex.
-
-                        Ea ius melius incorrupte. Liber persecuti id quo. Porro facete suavitate pri at. Accusata democritum scripserit no vix. Soluta graece oblique at pri, eu augue falli consequuntur nam.
-
-                        Per impetus reprehendunt ne. Graece tamquam accusam cum in. An tale omittam oportere mel, vis an iisque adipisci urbanitas. Ius ut elitr adolescens eloquentiam, mea singulis principes ei. In graece mnesarchum vix, possim laboramus ea cum, vim quot fierent deseruisse ut. Eum ea meis periculis.
-                        <br><div class="right"><a class="waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>Readmore</a></div>
-                        </div>
+                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>Quantum Computing</div>
+                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Abstract</span><span class="right orange-text">Rahul Sharma</span><br>
+						This technical presentation gives an overview of quantum computing technology– history of quantum computing, description of how they operate, differences between quantum computers and silicon based computers, major construction problems of a quantum computer, the current applications of quantum computing , the future of quantum computing and many other basic aspects related to quantum physics that one should know to completely understand how quantum computing works.
+					</div>
                 </li>
-                <li>
-                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>Seventh Article Heading</div>
-                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Summary</span><span class="right orange-text">Deepankar Agarwal</span><br>Lorem ipsum dolor sit amet, ei cum solum graeci recusabo, no eos tota simul pertinacia. Vim altera viderer salutandi in, an vim voluptatum delicatissimi, quidam possim verear has ut. Nam vidisse verterem ex. Ne nostrud facilisis imperdiet mea, an has quod legimus dissentiunt.
-
-                        Moderatius liberavisse vix an, per cu habeo vocibus, facete imperdiet cu has. Tibique deterruisset id eos, cum summo legimus abhorreant no. Ex per iudico noster platonem, id ignota honestatis nec. Et usu eirmod feugait, vis at gloriatur appellantur, ad mel ferri consulatu. Audire scribentur ius an, duo postea aliquam ex.
-
-                        Ea ius melius incorrupte. Liber persecuti id quo. Porro facete suavitate pri at. Accusata democritum scripserit no vix. Soluta graece oblique at pri, eu augue falli consequuntur nam.
-
-                        Per impetus reprehendunt ne. Graece tamquam accusam cum in. An tale omittam oportere mel, vis an iisque adipisci urbanitas. Ius ut elitr adolescens eloquentiam, mea singulis principes ei. In graece mnesarchum vix, possim laboramus ea cum, vim quot fierent deseruisse ut. Eum ea meis periculis.
-                        <br><div class="right"><a class="waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>Readmore</a></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>Eighth Article Heading</div>
-                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Summary</span><span class="right orange-text">Deepankar Agarwal</span><br>Lorem ipsum dolor sit amet, ei cum solum graeci recusabo, no eos tota simul pertinacia. Vim altera viderer salutandi in, an vim voluptatum delicatissimi, quidam possim verear has ut. Nam vidisse verterem ex. Ne nostrud facilisis imperdiet mea, an has quod legimus dissentiunt.
-
-                        Moderatius liberavisse vix an, per cu habeo vocibus, facete imperdiet cu has. Tibique deterruisset id eos, cum summo legimus abhorreant no. Ex per iudico noster platonem, id ignota honestatis nec. Et usu eirmod feugait, vis at gloriatur appellantur, ad mel ferri consulatu. Audire scribentur ius an, duo postea aliquam ex.
-
-                        Ea ius melius incorrupte. Liber persecuti id quo. Porro facete suavitate pri at. Accusata democritum scripserit no vix. Soluta graece oblique at pri, eu augue falli consequuntur nam.
-
-                        Per impetus reprehendunt ne. Graece tamquam accusam cum in. An tale omittam oportere mel, vis an iisque adipisci urbanitas. Ius ut elitr adolescens eloquentiam, mea singulis principes ei. In graece mnesarchum vix, possim laboramus ea cum, vim quot fierent deseruisse ut. Eum ea meis periculis.
-                        <br><div class="right"><a class="waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>Readmore</a></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="mdi-image-filter-drama circle"></i>Ninth Article Heading</div>
-                    <div class="collapsible-body"><p><span class="flow-text indigo-text">Summary</span><span class="right orange-text">Deepankar Agarwal</span><br>Lorem ipsum dolor sit amet, ei cum solum graeci recusabo, no eos tota simul pertinacia. Vim altera viderer salutandi in, an vim voluptatum delicatissimi, quidam possim verear has ut. Nam vidisse verterem ex. Ne nostrud facilisis imperdiet mea, an has quod legimus dissentiunt.
-
-                        Moderatius liberavisse vix an, per cu habeo vocibus, facete imperdiet cu has. Tibique deterruisset id eos, cum summo legimus abhorreant no. Ex per iudico noster platonem, id ignota honestatis nec. Et usu eirmod feugait, vis at gloriatur appellantur, ad mel ferri consulatu. Audire scribentur ius an, duo postea aliquam ex.
-
-                        Ea ius melius incorrupte. Liber persecuti id quo. Porro facete suavitate pri at. Accusata democritum scripserit no vix. Soluta graece oblique at pri, eu augue falli consequuntur nam.
-
-                        Per impetus reprehendunt ne. Graece tamquam accusam cum in. An tale omittam oportere mel, vis an iisque adipisci urbanitas. Ius ut elitr adolescens eloquentiam, mea singulis principes ei. In graece mnesarchum vix, possim laboramus ea cum, vim quot fierent deseruisse ut. Eum ea meis periculis.
-                        <br><div class="right"><a class="waves-effect waves-light btn"><i class="mdi-file-cloud right"></i>Readmore</a></div>
-                    </div>
-                </li>
-
-
-            </ul>
+			</ul>
         </div>
 
     </div>
-
-
-    <!--Floating action button-->
-    <div class="fixed-action-btn" style="bottom: 150px; right: 24px;">
-        <a class="btn-floating btn-large green">
-            <i class="large material-icons tooltipped" data-position="left" data-delay="50" data-tooltip="Options">settings</i>
-        </a>
-        <ul>
-            <li><a class="btn-floating red" ><i class="material-icons tooltipped" data-position="left" data-delay="50" data-tooltip="Browse By Categories">search</i></a></li>
-            <li><a class="btn-floating yellow"><i class="material-icons tooltipped" data-position="left" data-delay="50" data-tooltip="Add Your Own Article">edit</i></a></li>
-        </ul>
-    </div>
-    <!--End of Floating action button-->
-
 
 </main>
 <!--End of the Main Container-->
@@ -205,6 +146,7 @@
 
 <!--Footer of the page-->
 <footer class="page-footer blue darken-1">
+    <img class="left" style="padding-left: 10px;" height="135" width="140" src="../images/csi.png">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
